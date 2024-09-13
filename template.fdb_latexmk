@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726114229.97806 "c:/Users/l8626/Desktop/cmu/36225/template.tex" "template.pdf" "template" 1726114232.80629 0
+["pdflatex"] 1726268582.52433 "c:/Users/l8626/Desktop/cmu/36225/template.tex" "template.pdf" "template" 1726268586.0829 0
   "C:/Users/l8626/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1717202371 157441 630ac9bca0e616d740d6f31fad22d781 ""
   "C:/Users/l8626/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1709868571 11548 be9ff029b01e475c19ae45bbbb60f993 ""
   "C:/Users/l8626/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710302485 24231887 3f2abfab52de6487753bf3d1693222fb ""
@@ -298,13 +298,15 @@
   "C:/Users/l8626/AppData/Local/Programs/MiKTeX/tex/latex/xfrac/xfrac.sty" 1708099996 14847 00e49ca86bcb9e60825f609034895f26 ""
   "C:/Users/l8626/AppData/Local/Programs/MiKTeX/tex/latex/xifthen/xifthen.sty" 1448274436 5689 1bfa68243e89a54479e7d0580773c57e ""
   "C:/Users/l8626/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/l8626/Desktop/cmu/36225/template.tex" 1726114228 6338 bec567db53047600f28c56995f8c0948 ""
+  "Screenshot 2024-09-13 181832.png" 1726265923 28408 d59df6dbc58a30400516a3d0b770d8f6 ""
+  "c:/Users/l8626/Desktop/cmu/36225/template.tex" 1726268581 11588 324b69402dd907514323b66b624fee73 ""
+  "fig3.png" 1726267428 31281 10e63864539ada596614bc5dc84ea3ae ""
   "letterfonts.tex" 1712279847 8702 300377c5f733ebe6aa4b7f8e56db5921 ""
   "macros.tex" 1712279847 3477 93000260d2aea292d29c76d4ace77a29 ""
   "preamble.tex" 1712279847 20856 796b6c1bf7f9680a50fcd9eed594461d ""
-  "template.aux" 1726114232 2733 5299b88a5a7d5cfc45ed5c9aa288def8 "pdflatex"
-  "template.tex" 1726114228 6338 bec567db53047600f28c56995f8c0948 ""
-  "template.toc" 1726114232 299 fe487373fdcc71bdafd1236c4d94b1ed "pdflatex"
+  "template.aux" 1726268585 4002 8027ea45dc0e5d5c474afe1f53ddcadd "pdflatex"
+  "template.tex" 1726268581 11588 324b69402dd907514323b66b624fee73 ""
+  "template.toc" 1726268585 489 ccc6c9ea2bc3fe650b1415156593ed83 "pdflatex"
   (generated)
   "template.aux"
   "template.log"

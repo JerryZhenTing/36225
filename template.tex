@@ -16,7 +16,7 @@
 \pdfbookmark[section]{\contentsname}{toc}
 \tableofcontents
 \pagebreak
-\chapter*{Discrete Random Variables}
+\chapter*{Random Variables}
 \chapter{}
 \section{Probability and Mass functions}
 
@@ -45,6 +45,96 @@ Thus, $p_{X}(x)$ is the probability that the mapping X takes the value $x$. Note
 	0 &\leq p_{X}(x) \leq 1 \forall x
 \end{align}
 
+To simplify things, here are my understanding of random variable with less rigrous math definitions. 
+
+A random variable is an abstract way to talk about experimental outcomes, which makes
+it possible to flexibly apply probability theory. Note that you cannot observe a random
+variable X itself, i.e., you cannot observe the function that maps experimental outcomes to
+numbers. The experimenter defines the random variable (i.e., function) of interest, and then
+observes the result of applying the defined function to an experimental outcome
+
+\begin{note}
+	The realization of a random variable is the result of applying the random variable (i.e., function) to an observed outcome of a random experiment. This is what the
+experimenter actually observes. The realization of a random variable is typically denoted
+using lowercase italicized Roman letters, e.g., $x$ is a realization of X.
+
+\end{note}
+
+\ex{}{Suppose we flip a fair (two-sided) coin $n \geq 2$ times, and assume that the $n$
+flips are independent of one another. Define X as the number of coin flips that are heads.
+Note that X is a random variable given that it is a function (i.e., counting the number of
+heads) that is applied to a random process (i.e., independently flipping a fair coin $n$ times).
+Possible realizations of the random variable X include any $x \in \{0, 1, . . . , n\}$, i.e., we could
+observe any number of heads between $0$ and $n$.}
+
+\section{Probability Mass and Density Functions}
+
+\dfn{Probability mass function}{The probability mass function (PMF) of a discrete random variable X is the
+function $f(\cdot)$ that associates a probability with each $x \in S$. In other words, the PMF of X
+is the function that returns $P(X = x)$ for each x in the domain of X.}
+
+Any PMF must define a valid probability distribution, with the properties:
+\begin{align}
+	f(x) &= P(X = x) \geq 0 \quad \forall x \in S \\
+	\sum_{x\in S}^{}f(x) &= 1
+\end{align}
+
+\ex{}{See below for the PMF corresponding to the coin flipping example with
+$n = 5$ and $n = 10$ independent flips. As we might expect, the most likely realizations of
+X are those in which we observe approximately $n/2$ heads. Note that it is still possible to
+observe $x = 0$ or $x = n$ heads, but these extreme results are less likely to occur.
+
+\includegraphics*[scale = 0.5]{Screenshot 2024-09-13 181832.png}
+}
+
+
+\dfn{Probability density function}{The probability density function (PDF) of a continuous random variable X is
+the function $f(\cdot)$ that associates a probability with each range of realizations of X. The area
+under the PDF between $a$ and $b$ returns $P(a < X < b)$ for any $a, b \in S$ satisfying $a < b$.}
+
+Any PDF must have properties:
+\begin{align*}
+	f(x) &\geq 0 \quad \forall x \in S \\
+	\int_{a}^{b}f(x)dx &= P(a<X<b) \geq 0 \quad \forall a,b \in S \quad \text{satisfying} \quad a<b \\
+	\int_{x \in S}^{}f(x)dx &= 1
+\end{align*}
+
+Note that PMF is inclusively bounded above by $1$ while PDF does not specify an upper bound.
+
+\ex{}{Suppose that we randomly spin the second hand around a clock face $n$ independent times. Define $Z_{i}$ as the position where the second hand stops spinning on the i-th
+replication, and define $X = \frac{1}{n}\sum_{i=1}^{n}Z_{i}$ as the average of the $n$ spin results. Note that the
+realizations of X are any values $x \in [0, 12]$, which is the same domain as $Z_{i}$
+for $i = 1,\dots, n$. See figure below for the PDF with $n = 1$ and $n = 5$ independent spins. Note that with $n = 1$
+spin, the PDF is simply a flat line between $0$ and $12$, which implies that $P(x < X < x + 1)$
+is equal for any $x \in \{0,\dots,11\}$. This makes sense given that, for any given spin, the second
+hand could land anywhere on the clock face with equal probability. With $n = 5$ spins, the
+PDF has a bell shape, where values around the midpoint of $x = 6$ have the largest density. With $n = 5$ spins, we have that $\int_{4}^{8}f(x)dx = P(4 < X < 8) = 0.80$ (i.e., about $80 \%$ of the
+realizations of X are between $4$ and $8$).
+
+\includegraphics*[scale = 0.6]{fig3.png}
+}
+
+\section{Cumulative Distribution Function}
+\dfn{CDF}{The cumulative distribution function (CDF) of a random variable X is the
+function $F(\cdot)$ that returns the probability $P(X \leq x)$ for any $x \in S$. Note that CDF is a function from S to $[0, 1]$, i.e., $F : S \mapsto [0, 1]$.}
+
+Any CDF must define a valid probability distribution, i.e., $0 \leq F(x) \leq 1$ for any $x \in S$,
+which comes from the fact that $F(x) = P(X \leq x)$ is a probability calculation. Note that a
+CDF can be defined for both discrete and continuous random variables:
+\begin{align*}
+	F(x) &= \sum_{z\in S, z \leq x}^{}f(x) \quad \text{for discrete random variables}\\
+	F(x) &= \int_{-\infty}^{x}f(z)dz \quad \text{for continuous random variables}
+\end{align*}
+Furthermore, note that probabilities can be written in terms of the CDF, such as
+\begin{center}
+	$P(a < X \leq b) = F(b) - F(a)$
+\end{center}
+
+given that the CDF is related to the PMF(or PDF), such as 
+\begin{align*}
+	f(x) &= F(x) - \lim_{a \rightarrow x^{-}} F(a) \quad \text{for discrete case} \\
+	f(x) &= \dfrac{dF(x)}{dx} \quad \text{for continuous random var}
+\end{align*}
 
 \section{Random}
 \dfn{Normed Linear Space and Norm $\boldsymbol{\|\cdot\|}$}{Let $V$ be a vector space over $\bbR$ (or $\bbC$). A norm on $V$ is function $\|\cdot\|\ V\to \bbR_{\geq 0}$ satisfying \begin{enumerate}[label=\bfseries\tiny\protect\circled{\small\arabic*}]
