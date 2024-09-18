@@ -136,6 +136,25 @@ given that the CDF is related to the PMF(or PDF), such as
 	f(x) &= \dfrac{dF(x)}{dx} \quad \text{for continuous random var}
 \end{align*}
 
+\section{Expectation}
+Consider a fair die. If it were thrown a large amount of times, each of the possible outcomes $1,2,\dots,6$ would appear
+on about one-sixth of the throws, and the average of the numbers observed would be approximately 
+\begin{center}
+	$\frac{1}{6} + \frac{1}{6}(2) + \frac{1}{6}(3) + \dots + \frac{1}{6}(6) = \frac{7}{2}$
+\end{center}
+which we call \textbf{mean value}. This notion of mean value is easily extended to more general distributions as follows.
+
+\dfn{}{If X is a \textbf{discrete random variable}, the expectation of X is denoted by $\mathbb{E}(X)$ and defined by
+\begin{center}
+	$\mathbb{E}(X) = \sum_{x \in \img X}^{}x \mathbb{P}(X=x)$
+\end{center}
+}
+and is often rewritten as 
+\begin{center}
+	$\mathbb{E}(X) = \sum_{x}^{}x\mathbb{P}(X=x) = \sum_{x}^{}xp_{X}(x)$
+\end{center}
+
+
 \section{Random}
 \dfn{Normed Linear Space and Norm $\boldsymbol{\|\cdot\|}$}{Let $V$ be a vector space over $\bbR$ (or $\bbC$). A norm on $V$ is function $\|\cdot\|\ V\to \bbR_{\geq 0}$ satisfying \begin{enumerate}[label=\bfseries\tiny\protect\circled{\small\arabic*}]
 		\item \label{n:1}$\|x\|=0 \iff x=0$ $\forall$ $x\in V$
