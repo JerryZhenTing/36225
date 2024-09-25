@@ -6,5 +6,4 @@
 \contentsline {section}{\numberline {2.3}Cumulative Distribution Function}{7}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Expectation}{7}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Random}{8}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Algorithms}{10}{section.2.6}%
 \contentsfinish 
