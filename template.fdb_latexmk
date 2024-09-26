@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1727304510.48703 "c:/Users/l8626/Desktop/cmu/36225/template.tex" "template.pdf" "template" 1727304514.64274 0
+["pdflatex"] 1727309325.7234 "c:/Users/l8626/Desktop/cmu/36225/template.tex" "template.pdf" "template" 1727309329.34634 0
   "C:/Users/l8626/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1717202371 157441 630ac9bca0e616d740d6f31fad22d781 ""
   "C:/Users/l8626/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710302485 24231887 3f2abfab52de6487753bf3d1693222fb ""
   "C:/Users/l8626/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/px-lms.enc" 1708099590 3877 2ca811886181a05a861d20a35de75e06 ""
@@ -265,14 +265,14 @@
   "C:/Users/l8626/AppData/Local/Programs/MiKTeX/tex/latex/xifthen/xifthen.sty" 1448274436 5689 1bfa68243e89a54479e7d0580773c57e ""
   "C:/Users/l8626/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "Screenshot 2024-09-13 181832.png" 1726265923 28408 d59df6dbc58a30400516a3d0b770d8f6 ""
-  "c:/Users/l8626/Desktop/cmu/36225/template.tex" 1727304505 13325 19c6d24c362d84f48fd05f923244fee3 ""
+  "c:/Users/l8626/Desktop/cmu/36225/template.tex" 1727309316 13404 447bcd9083f9191018bc5de2bdc60c8e ""
   "fig3.png" 1726267428 31281 10e63864539ada596614bc5dc84ea3ae ""
   "letterfonts.tex" 1712279847 8702 300377c5f733ebe6aa4b7f8e56db5921 ""
   "macros.tex" 1712279847 3477 93000260d2aea292d29c76d4ace77a29 ""
   "preamble.tex" 1712279847 20856 796b6c1bf7f9680a50fcd9eed594461d ""
-  "template.aux" 1727304514 3855 6647e3d2ab5f1bdd2bf4871003dadf84 "pdflatex"
-  "template.tex" 1727304505 13325 19c6d24c362d84f48fd05f923244fee3 ""
-  "template.toc" 1727304514 552 9435181e849965a384c7909e4f2797d5 "pdflatex"
+  "template.aux" 1727309328 4779 2bc0cf20e60026313da359c7fd540719 "pdflatex"
+  "template.tex" 1727309316 13404 447bcd9083f9191018bc5de2bdc60c8e ""
+  "template.toc" 1727309328 693 e769115a8d48f406f5ec108c085c411d "pdflatex"
   (generated)
   "template.aux"
   "template.log"
